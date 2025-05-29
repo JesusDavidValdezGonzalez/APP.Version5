@@ -85,11 +85,11 @@ function openScenario(title) {
   const behaviorsDiv = document.getElementById("behaviors");
   behaviorsDiv.innerHTML = "";
   behaviorLabels.forEach(label => {
-    behaviorsDiv.innerHTML += \`
-      <label>\${label}</label>
+    behaviorsDiv.innerHTML += `
+      <label>${label}</label>
       <textarea rows="3"></textarea>
-      <div class="gold hidden">Gold Standard: Example for \${label}</div>
-    \`;
+      <div class="gold hidden">Gold Standard: Example for ${label}</div>
+    `;
   });
   showSection("scenario");
 }
